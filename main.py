@@ -15,8 +15,8 @@ from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 
 #adding env variables
 import os 
-from dotenv import load_dotenv
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
